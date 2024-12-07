@@ -19,6 +19,8 @@
     "@mui/icons-material": "^6.1.10",
     "@mui/material": "^6.1.10",
     "@mui/styled-engine-sc": "^6.1.10",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
     "framer-motion": "^11.13.1",
     "gsap": "^3.12.5",
     "kursor": "^0.1.6",

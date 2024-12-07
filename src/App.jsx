@@ -6,6 +6,7 @@ import Alert from './pages/Alert';
 import Settings from './pages/Settings';
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import { motion } from 'framer-motion';
+import Test_component from './components/test_component';
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
         exit={{ y: '-100%' }} // Slide out on exit
         transition={{ duration: 1 }}
       />
-      
+
       <Router>
         {/* Main Routes */}
         <Routes>
@@ -45,7 +46,7 @@ function App() {
               //   exit={{ y: '-100%' }} // Slide out on exit
               //   transition={{ duration: 1 }}
               // >
-                <SearchInitial />
+              <SearchInitial />
               // </motion.div>
             }
           />
@@ -58,11 +59,11 @@ function App() {
               //   exit={{ y: '-100%' }} // Slide out on exit
               //   transition={{ duration: 1 }}
               // >
-                <Home />
+              <Home />
               // </motion.div>
             }
           />
-            <Route
+          <Route
             path="/Settings"
             element={
               // <motion.div
@@ -71,11 +72,11 @@ function App() {
               //   exit={{ y: '-100%' }} // Slide out on exit
               //   transition={{ duration: 1 }}
               // >
-                <Settings/>
+              <Settings />
               // </motion.div>
             }
           />
-<Route
+          <Route
             path="/Alert"
             element={
               // <motion.div
@@ -84,12 +85,14 @@ function App() {
               //   exit={{ y: '-100%' }} // Slide out on exit
               //   transition={{ duration: 1 }}
               // >
-                <Alert/>
+              <Alert />
               // </motion.div>
             }
           />
-
+          <Route path="/test_data" element={<Test_component />} />
           
+
+
         </Routes>
       </Router>
     </div>
